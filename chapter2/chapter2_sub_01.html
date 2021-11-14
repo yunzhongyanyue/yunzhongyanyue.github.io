@@ -1,0 +1,638 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>1.1 Numpy基础教程 · 学习笔记</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter2_sub_02.html" />
+    
+    
+    <link rel="prev" href="../chapter2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			<li>
+				<a href="/" target="_blank">简易教程</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">文档目录</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1.html">
+            
+                <a href="../chapter1.html">
+            
+                    
+                    1. GetBook使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2.html">
+            
+                <a href="../chapter2.html">
+            
+                    
+                    2. Python Numpy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="chapter2_sub_01.html">
+            
+                <a href="chapter2_sub_01.html">
+            
+                    
+                    1.1 Numpy基础教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="chapter2_sub_02.html">
+            
+                <a href="chapter2_sub_02.html">
+            
+                    
+                    1.2 Numpy科学计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3.html">
+            
+                <a href="../chapter3.html">
+            
+                    
+                    3. Python Pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4.html">
+            
+                <a href="../chapter4.html">
+            
+                    
+                    4. Python Matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5.html">
+            
+                <a href="../chapter5.html">
+            
+                    
+                    5. ###
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/chapter5_sub_01.html">
+            
+                <a href="../chapter5/chapter5_sub_01.html">
+            
+                    
+                    5.1 ###
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.1 Numpy基础教程</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<h1 id="1-numpy&#x57FA;&#x7840;">1. NumPy&#x57FA;&#x7840;</h1>
+<hr>
+<h2 id="11-ndarray-&#x5BF9;&#x8C61;">1.1 Ndarray &#x5BF9;&#x8C61;</h2>
+<p>NumPy &#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x70B9;&#x662F;&#x5176; N &#x7EF4;&#x6570;&#x7EC4;&#x5BF9;&#x8C61; ndarray&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x800C;&#x7075;&#x6D3B;&#x7684;&#x5927;&#x6570;&#x636E;&#x96C6;&#x5BB9;&#x5668;&#xFF0C;&#x63CF;&#x8FF0;&#x76F8;&#x540C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x96C6;&#x5408;&#xFF0C;&#x4EE5; 0 &#x4E0B;&#x6807;&#x4E3A;&#x5F00;&#x59CB;&#x8FDB;&#x884C;&#x96C6;&#x5408;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;&#x3002;</p>
+<pre class="language-"><code class="lang-python">numpy<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">,</span> dtype <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">,</span> copy <span class="token operator">=</span> <span class="token boolean">True</span><span class="token punctuation">,</span> order <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">,</span> subok <span class="token operator">=</span> <span class="token boolean">False</span><span class="token punctuation">,</span> ndmin <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="12-numpy-&#x6570;&#x636E;&#x7C7B;&#x578B;">1.2 NumPy &#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
+<p>numpy &#x652F;&#x6301;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;(dtype)&#x6BD4; Python &#x5185;&#x7F6E;&#x7684;&#x7C7B;&#x578B;&#x8981;&#x591A;&#x5F88;&#x591A;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x53EF;&#x4EE5;&#x548C; C &#x8BED;&#x8A00;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;&#x4E0A;&#xFF0C;&#x5176;&#x4E2D;&#x90E8;&#x5206;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;&#x4E3A; Python &#x5185;&#x7F6E;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bool_</td>
+<td>&#x5E03;&#x5C14;&#x578B;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;True &#x6216;&#x8005; False&#xFF09;</td>
+</tr>
+<tr>
+<td>int_</td>
+<td>&#x9ED8;&#x8BA4;&#x7684;&#x6574;&#x6570;&#x7C7B;&#x578B;&#xFF08;&#x7C7B;&#x4F3C;&#x4E8E; C &#x8BED;&#x8A00;&#x4E2D;&#x7684; long&#xFF0C;int32 &#x6216; int64&#xFF09;</td>
+</tr>
+<tr>
+<td>intc</td>
+<td>&#x4E0E; C &#x7684; int &#x7C7B;&#x578B;&#x4E00;&#x6837;&#xFF0C;&#x4E00;&#x822C;&#x662F; int32 &#x6216; int 64</td>
+</tr>
+<tr>
+<td>intp</td>
+<td>&#x7528;&#x4E8E;&#x7D22;&#x5F15;&#x7684;&#x6574;&#x6570;&#x7C7B;&#x578B;&#xFF08;&#x7C7B;&#x4F3C;&#x4E8E; C &#x7684; ssize_t&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x4ECD;&#x7136;&#x662F; int32 &#x6216; int64&#xFF09;</td>
+</tr>
+<tr>
+<td>int8</td>
+<td>&#x5B57;&#x8282;&#xFF08;-128 to 127&#xFF09;</td>
+</tr>
+<tr>
+<td>int16</td>
+<td>&#x6574;&#x6570;&#xFF08;-32768 to 32767&#xFF09;</td>
+</tr>
+<tr>
+<td>int32</td>
+<td>&#x6574;&#x6570;&#xFF08;-2147483648 to 2147483647&#xFF09;</td>
+</tr>
+<tr>
+<td>int64</td>
+<td>&#x6574;&#x6570;&#xFF08;-9223372036854775808 to 9223372036854775807&#xFF09;</td>
+</tr>
+<tr>
+<td>uint8</td>
+<td>&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF08;0 to 255&#xFF09;</td>
+</tr>
+<tr>
+<td>uint16</td>
+<td>&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF08;0 to 65535&#xFF09;</td>
+</tr>
+<tr>
+<td>uint32</td>
+<td>&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF08;0 to 4294967295&#xFF09;</td>
+</tr>
+<tr>
+<td>uint64</td>
+<td>&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF08;0 to 18446744073709551615&#xFF09;</td>
+</tr>
+<tr>
+<td>float_</td>
+<td>float64 &#x7C7B;&#x578B;&#x7684;&#x7B80;&#x5199;</td>
+</tr>
+<tr>
+<td>float16</td>
+<td>&#x534A;&#x7CBE;&#x5EA6;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;1 &#x4E2A;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;5 &#x4E2A;&#x6307;&#x6570;&#x4F4D;&#xFF0C;10 &#x4E2A;&#x5C3E;&#x6570;&#x4F4D;</td>
+</tr>
+<tr>
+<td>float32</td>
+<td>&#x5355;&#x7CBE;&#x5EA6;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;1 &#x4E2A;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;8 &#x4E2A;&#x6307;&#x6570;&#x4F4D;&#xFF0C;23 &#x4E2A;&#x5C3E;&#x6570;&#x4F4D;</td>
+</tr>
+<tr>
+<td>float64</td>
+<td>&#x53CC;&#x7CBE;&#x5EA6;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;1 &#x4E2A;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;11 &#x4E2A;&#x6307;&#x6570;&#x4F4D;&#xFF0C;52 &#x4E2A;&#x5C3E;&#x6570;&#x4F4D;</td>
+</tr>
+<tr>
+<td>complex_</td>
+<td>complex128 &#x7C7B;&#x578B;&#x7684;&#x7B80;&#x5199;&#xFF0C;&#x5373; 128 &#x4F4D;&#x590D;&#x6570;</td>
+</tr>
+<tr>
+<td>complex64</td>
+<td>&#x590D;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x53CC; 32 &#x4F4D;&#x6D6E;&#x70B9;&#x6570;&#xFF08;&#x5B9E;&#x6570;&#x90E8;&#x5206;&#x548C;&#x865A;&#x6570;&#x90E8;&#x5206;&#xFF09;</td>
+</tr>
+<tr>
+<td>complex128</td>
+<td>&#x590D;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x53CC; 64 &#x4F4D;&#x6D6E;&#x70B9;&#x6570;&#xFF08;&#x5B9E;&#x6570;&#x90E8;&#x5206;&#x548C;&#x865A;&#x6570;&#x90E8;&#x5206;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x662F;&#x901A;&#x8FC7;&#x5BF9;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x9884;&#x5148;&#x8BBE;&#x5B9A;&#x201D;&lt;&#x201C;&#x6216;&#x201D;&gt;&#x201D;&#x6765;&#x51B3;&#x5B9A;&#x7684;&#x3002;&#x201D;&lt;&#x201C;&#x610F;&#x5473;&#x7740;&#x5C0F;&#x7AEF;&#x6CD5;(&#x6700;&#x9AD8;&#x6709;&#x6548;&#x5B57;&#x8282;&#x5728;&#x6700;&#x524D;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x79F0;&#x4E3A;&#x5927;&#x7AEF;&#x6CD5;)&#x3002;&#x201D;&gt;&#x201D;&#x610F;&#x5473;&#x7740;&#x5927;&#x7AEF;&#x6CD5;(&#x6700;&#x4F4E;&#x6709;&#x6548;&#x5B57;&#x8282;&#x5728;&#x6700;&#x524D;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x6210;&#x4E3A;&#x5C0F;&#x7AEF;&#x6CD5;)&#x3002;</p>
+<p><img src="../image/&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7B80;&#x79F0;.png" alt=""></p>
+<h2 id="13-numpy-&#x6570;&#x636E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;">1.3 Numpy &#x6570;&#x636E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h2>
+<p>numpy&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x6539;&#x539F;&#x6570;&#x636E;&#x7684;dtype&#xFF0C;&#x53EA;&#x80FD;&#x7528;&#x51FD;&#x6570;astype()&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+a<span class="token operator">=</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>random <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span>
+a<span class="token punctuation">.</span>dtype <span class="token operator">=</span><span class="token string">&quot;float32&quot;</span>
+</code></pre>
+<h2 id="14-numpy-&#x6570;&#x7EC4;&#x5C5E;&#x6027;">1.4 NumPy &#x6570;&#x7EC4;&#x5C5E;&#x6027;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ndarray.ndim</td>
+<td>&#x79E9;&#xFF0C;&#x5373;&#x8F74;&#x7684;&#x6570;&#x91CF;&#x6216;&#x7EF4;&#x5EA6;&#x7684;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>ndarray.shape</td>
+<td>&#x6570;&#x7EC4;&#x7684;&#x7EF4;&#x5EA6;&#xFF0C;&#x5BF9;&#x4E8E;&#x77E9;&#x9635;,n&#x884C;m&#x5217;</td>
+</tr>
+<tr>
+<td>ndarray.size</td>
+<td>&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x603B;&#x4E2A;&#x6570;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; shape&#x4E2D;n*m&#x7684;&#x503C;</td>
+</tr>
+<tr>
+<td>ndarray.dtype</td>
+<td>ndarray&#x5BF9;&#x8C61;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>ndarray.itemsize</td>
+<td>ndarray&#x5BF9;&#x8C61;&#x4E2D;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x4EE5;&#x5B57;&#x8282;&#x4E3A;&#x5355;&#x4F4D;</td>
+</tr>
+<tr>
+<td>ndarray.flags</td>
+<td>ndarray&#x5BF9;&#x8C61;&#x7684;&#x5185;&#x5B58;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>ndarray.real</td>
+<td>ndarray&#x5143;&#x7D20;&#x7684;&#x5B9E;&#x90E8;</td>
+</tr>
+<tr>
+<td>ndarray.imag</td>
+<td>ndarray&#x5143;&#x7D20;&#x7684;&#x865A;&#x90E8;</td>
+</tr>
+<tr>
+<td>ndarray.data</td>
+<td>&#x5305;&#x542B;&#x5B9E;&#x9645;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x7531;&#x4E8E;&#x4E00;&#x822C;&#x901A;&#x8FC7;&#x6570;&#x7EC4;&#x7684;&#x7D22;&#x5F15;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x5E38;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-numpy-&#x521B;&#x5EFA;&#x6570;&#x7EC4;">2. NumPy &#x521B;&#x5EFA;&#x6570;&#x7EC4;</h1>
+<hr>
+<p>&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x4F7F;&#x7528;numpy.array&#x51FD;&#x6570;,&#x5B83;&#x63A5;&#x6536;&#x4E00;&#x5207;&#x5E8F;&#x5217;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#xFF08;&#x5305;&#x62EC;&#x5176;&#x4ED6;&#x6570;&#x7EC4;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x542B;&#x6709;&#x4F20;&#x5165;&#x6570;&#x636E;&#x7684;Numpy&#x6570;&#x7EC4;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;numpy.zeros&#xFF0C;numpy.empty&#xFF0C;numpy.ones&#xFF0C;numpy.arange&#xFF0C;numpy.eys&#x7B49;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+ndarray1 <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+ndarray2 <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">(</span><span class="token string">&apos;abcdefg&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+ndarray3 <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">44</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="21-numpyzeros&#x548C;zeroslike&#x521B;&#x5EFA;&#x6570;&#x7EC4;">2.1 numpy.zeros&#x548C;zeros_like&#x521B;&#x5EFA;&#x6570;&#x7EC4;</h2>
+<p>&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x9ED8;&#x8BA4;&#x503C;&#x662F;0. &#x6CE8;&#x610F;:zeros_linke&#x51FD;&#x6570;&#x53EA;&#x662F;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;ndarray&#x6570;&#x7EC4;&#x7684;shape&#x6765;&#x521B;&#x5EFA;&#x6240;&#x6709;&#x5143;&#x7D20;&#x4E3A;0&#x7684;&#x6570;&#x7EC4;&#xFF0C;<strong>&#x5E76;&#x4E0D;&#x662F;&#x62F7;&#x8D1D;&#x6E90;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6570;&#x636E;</strong></p>
+<pre class="language-"><code class="lang-python">numpy<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span>shape<span class="token punctuation">,</span> dtype <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">,</span> order <span class="token operator">=</span> <span class="token string">&apos;C&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shape</td>
+<td>&#x6570;&#x7EC4;&#x5F62;&#x72B6;</td>
+</tr>
+<tr>
+<td>dtype</td>
+<td>&#x6570;&#x636E;&#x7C7B;&#x578B;,&#x53EF;&#x9009;</td>
+</tr>
+<tr>
+<td>order</td>
+<td>&#x6709;&quot;C&quot;&#x548C;F&quot;&#x4E24;&#x4E2A;&#x9009;&#x9879;&#x5206;&#x522B;&#x4EE3;&#x8868;&#xFF0C;&#x884C;&#x4F18;&#x5148;&#x548C;&#x5217;&#x4F18;&#x5148;&#xFF0C;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5B58;&#x50A8;&#x5143;&#x7D20;&#x7684;&#x987A;&#x5E8F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>numpy.empty&#x548C;empty_like&#x3001;numpy.ones&#x548C;ones_like&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#xFF0C;&#x7528;&#x6CD5;&#x76F8;&#x540C;</strong></p>
+<h2 id="22-numpyfromiter">2.2 numpy.fromiter</h2>
+<p>numpy.fromiter &#x65B9;&#x6CD5;&#x4ECE;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#x4E2D;&#x5EFA;&#x7ACB; ndarray &#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x3002;</p>
+<pre class="language-"><code class="lang-python">numpy<span class="token punctuation">.</span>fromiter<span class="token punctuation">(</span>iterable<span class="token punctuation">,</span> dtype<span class="token punctuation">,</span> count<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iterable</td>
+<td>&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>dtype</td>
+<td>&#x6570;&#x636E;&#x7C7B;&#x578B;,&#x53EF;&#x9009;</td>
+</tr>
+<tr>
+<td>count</td>
+<td>&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;-1&#xFF0C;&#x8BFB;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By Wuyuexin </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2021-11-14 00:26:20 </span> </footer>
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="../chapter2.html" class="navigation navigation-prev " aria-label="Previous page: 2. Python Numpy">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="chapter2_sub_02.html" class="navigation navigation-next " aria-label="Next page: 1.2 Numpy科学计算">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"1.1 Numpy基础教程","level":"1.3.1","depth":2,"next":{"title":"1.2 Numpy科学计算","level":"1.3.2","depth":2,"path":"chapter2/chapter2_sub_02.md","ref":"./chapter2/chapter2_sub_02.md","articles":[]},"previous":{"title":"2. Python Numpy","level":"1.3","depth":1,"path":"chapter2.md","ref":"chapter2.md","articles":[{"title":"1.1 Numpy基础教程","level":"1.3.1","depth":2,"path":"chapter2/chapter2_sub_01.md","ref":"./chapter2/chapter2_sub_01.md","articles":[]},{"title":"1.2 Numpy科学计算","level":"1.3.2","depth":2,"path":"chapter2/chapter2_sub_02.md","ref":"./chapter2/chapter2_sub_02.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","chapter-fold","-copy-code-button","code","page-footer-ex","-anchor-navigation-ex","expandable-chapters-small","prism","-highlight","-lunr","search","-search-pro","splitter","-sharing","-insert-logo","hide-element","-page-treeview","sectionx","-popup","-lightbox","theme-fexa","auto-scroll-table"],"ignores":["_book","node_modules"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"page-treeview":{"copyright":"","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"typescript"}},"page-footer-ex":{"copyright":"By Wuyuexin","markdown":true,"update_label":"<i>updated</i>","update_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search":{},"auto-scroll-table":{},"theme-fexa":{"search-placeholder":"输入关键字搜索","logo":"./image/logo.png","favicon":"./favicon.ico"},"code":{"copyButtons":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"Microsoft YaHei","size":12},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"showLevel":false,"showGoTop":false},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"http://m.qpic.cn/psc?/V13YQnla16OHe5/ruAMsa53pVQWN7FLK88i5kKcQMt1TjPDJWvATh8Q8zdyGoOoiZM8PpgU5LdzaUMV9vnrFV*fdGOp0CjXtZuHCsj9wE3P19RWf1tJFukKkws!/b&bo=bgIsAQAAAAADB2M!&rf=viewer_4","style":"background: none; max-height: 80px; min-height: 80px"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"nav":[{"url":"/","target":"_blank","name":"简易教程"}]}},"title":"学习笔记","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter2/chapter2_sub_01.md","mtime":"2021-11-13T16:26:20.669Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-11-13T16:36:47.419Z"},"basePath":"..","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
